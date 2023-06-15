@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import MainLayout from '../components/Layouts/MainLayout'
+import Login from '../components/auth/Login'
 // interface loginForm{
 //     email:String,
 //     password:String
@@ -12,37 +13,19 @@ const login = () => {
     // })
     return (
         <>
-            <MainLayout>
+            <MainLayout title='Login ! User Login'>
                 <br />
                 <div className="blog">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-md-10 col-12 mx-auto">
-                                <div className="card p-3">
-                                    <h4 className="text-center">Login Now</h4>
-                                    <form >
-                                        <div className="form-group">
-                                            <label htmlFor="">Email:</label>
-                                            <input type="email" placeholder="Enter Email" className="form-control" value="sk" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="">Password:</label>
-                                            <input type="password" placeholder="Enter Password" className="form-control" value="ss" />
-                                        </div>
-                                        <div className="text-center">
-                                            <button>Submit</button>
-                                            {/* <button className={dis ? "btn btn-success disable" : "btn btn-success"} disabled={dis}>Submit</button> */}
-                                        </div>
-                                    </form>
-                                </div>
+                               <Login />
                             </div>
                         </div>
                     </div>
                 </div>
                 <br /><br />
             </MainLayout>
-
-
         </>
     )
 }
