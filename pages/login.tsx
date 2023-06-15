@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { auth } from '../firebase'
 import { useRouter } from 'next/router'
 import MainLayout from '../components/Layouts/MainLayout'
-interface loginForm{
-    email:String,
-    password:String
-}
+// interface loginForm{
+//     email:String,
+//     password:String
+// }
 const login = () => {
     // const [loginForm, setLoginForm] = React.useState<loginForm>({
     //     email:'',
